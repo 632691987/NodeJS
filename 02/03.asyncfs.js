@@ -27,11 +27,11 @@ var fs = require("fs");
  * w -> write on start
  * a -> append to write
  */
-fs.open("hello2.txt","w",function (err , fd) {//var fd = fs.openSync("./hello.txt" , "w");
+fs.open("hello2.txt","w",function (err , fd) {
 	//判断是否出错
 	if(!err){
 		//如果没有出错，则对文件进行写入操作
-		fs.write(fd,"Write in ASYNC style 2",function (err) {//fs.writeSync(fd , "VV", 0);
+		fs.write(fd,"Write in ASYNC style 2",function (err) {
 			if(!err){
 				console.log("写入成功~~");
 			}

@@ -1,1 +1,2 @@
-这是异步写入的内容
+Write in ASYNC style 2
+Write in ASYNC style 4

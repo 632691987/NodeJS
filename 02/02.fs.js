@@ -43,3 +43,6 @@ fs.writeSync(fd , "VV", 0);
 fs.closeSync(fd);
 
 console.log("程序向下执行~~~");
+
+var fsBufer = fs.readFileSync("./hello.txt");
+console.log(fsBufer.toString());

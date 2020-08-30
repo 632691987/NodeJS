@@ -22,6 +22,6 @@ exports.fn = function () {
 };
 
 //console.log(arguments.callee);
-console.log(arguments.callee + "");
+//console.log(arguments.callee + "");
 //console.log(global.process.process.title);
 //console.log(global.process.env);

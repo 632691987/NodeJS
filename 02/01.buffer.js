@@ -50,18 +50,19 @@ buf2[6] = 0x47; //G
 buf2[7] = 0x48; //H
 buf2[8] = 0x49; //I
 buf2[9] = 0x4a; //J
-buf2[10] = 0x4a;//K --> no use, but no exception
+buf2[10] = 0x4a; //K --> no use, but no exception
 console.log(buf2.toString());
 
-for(var i=0 ; i<buf2.length ; i++){
-	//force to in OCX
-	console.log(buf2[i].toString(16));
+for (var i = 0; i < buf2.length; i++) {
+    //force to in OCX
+    console.log(buf2[i].toString(16));
 }
 
 
 
 //Buffer.allocUnsafe(size) 创建一个指定大小的buffer，但是buffer中可能含有敏感数据
-/*
+
 var buf3 = Buffer.allocUnsafe(10);
-console.log(buf3);
-*/
+buf3.write('This is Node JS language');
+console.log(buf3.toString('utf8', 3, 9));
+console.log(buf3.toString());
